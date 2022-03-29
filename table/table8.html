@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black; /* 테이블 테두리 설정 1px :두께 , solid : 선모양 , black : 선색상*/
+        border-collapse: collapse; /* 테이블 테두리가 2줄로 나오는걸 합해서 보여줌 */
+      }
+      img {
+        width: 145px;
+        height: 172px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 세로 tr:7 가로 td : 5  -->
+    <table>
+      <tr>
+        <!-- 1행 -->
+        <td rowspan="4">
+          <img src="../img/asdsad.jpg" alt="이미지" />
+        </td>
+        <td colspan="4">이력서</td>
+      </tr>
+
+      <!-- 2행 -->
+      <tr>
+        <td rowspan="2">성명</td>
+        <td rowspan="2">&nbsp;</td>
+        <td colspan="2">주민등록번호</td>
+      </tr>
+
+      <!-- 3행 -->
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+
+      <!-- 4행 -->
+      <tr>
+        <td colspan="4">생년월일 1998년 9월 25일생 (만23세)</td>
+      </tr>
+
+      <!-- 5행 -->
+      <tr>
+        <td>주소</td>
+        <td colspan="4"></td>
+      </tr>
+
+      <!-- 6행 -->
+      <tr>
+        <!-- &nbsp; : 스페이스바 한번-->
+        <td rowspan="2">연락처</td>
+        <td>집</td>
+        <td>&nbsp;</td>
+        <td rowspan="2">전자우편</td>
+        <td rowspan="2">&nbsp;</td>
+      </tr>
+
+      <!-- 7행 -->
+      <tr>
+        <td>핸드폰</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </body>
+</html>

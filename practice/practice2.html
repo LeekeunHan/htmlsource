@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black; /* 테이블 테두리 설정 1px :두께 , solid : 선모양 , black : 선색상*/
+      border-collapse: collapse; /* 테이블 테두리가 2줄로 나오는걸 합해서 보여줌 */
+    }
+    img {
+      width: 145px;
+      height: 172px;
+    }
+    table,
+    form {
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <table>
+      <tr>
+        <td rowspan="4"><img src="../img/asdsad.jpg" alt="이미지" /></td>
+        <td colspan="4">이력서</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">성명</td>
+        <td rowspan="2">&nbsp;</td>
+        <td colspan="2">주민등록번호</td>
+      </tr>
+
+      <tr>
+        <td colspan="3">&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td colspan="4">생년월일 1998.09.25일 생</td>
+      </tr>
+
+      <tr>
+        <td>주소</td>
+        <td colspan="4">&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">연락처</td>
+        <td>집</td>
+        <td>&nbsp;</td>
+        <td rowspan="2">전자우편</td>
+        <td rowspan="2">&nbsp;</td>
+      </tr>
+
+      <tr>
+        <td>핸드폰</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <form action="" method="get">
+      <label for="name">이름입력</label>
+      <input type="text" name="name" id="" /><br />
+
+      <label for="age">나이입력</label>
+      <input type="name" name="age" id="" />
+
+      <input type="submit" value="회원가입" />
+    </form>
+  </body>
+</html>

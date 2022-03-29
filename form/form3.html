@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <div>
+        <label for="userid">userid</label>
+        <input type="text" name="userid" id="userid" />
+      </div>
+      <div>
+        <label for="username">username</label>
+        <input type="text" name="username" id="username" />
+      </div>
+
+      <div>
+        <label for="gender">성별</label>
+        <input type="radio" name="gender" id="gender" value="남" /> 남
+        <input type="radio" name="gender" id="gender_f" value="여" /> 여
+      </div>
+
+      <!-- Select : drop-down list 
+            selected : 기본값 (처음부터 선택되어 보여주고싶을때)
+            
+            size : 사이즈조정 
+            multiple : ctrl 누르고 선택 가능 (여러개 선택 가능)
+    -->
+      <div>
+        <select name="fruit" id="fruit" size="5" multiple>
+          <option value="사과">사과</option>
+          <option value="바나나">바나나</option>
+          <option value="딸기" selected>딸기</option>
+          <option value="포도">포도</option>
+          <option value="수박">수박</option>
+        </select>
+      </div>
+
+      <!-- 글을쓸수있는 텍스트박스 생성가능 -->
+      <div>
+        <textarea name="info" id="" cols="30" rows="10">하고 싶은 말</textarea>
+      </div>
+
+      <!--  submit : form을 action , method 지정한 방식에 따라 서버로 전송 
+            reset : 버튼과 연결되어 있는 form 양식을 초기화
+            buttom : 새로운 기능 정의 할때 
+    -->
+      <div>
+        <input type="submit" value="보내기" />
+        <input type="reset" value="처음부터" />
+        <input type="button" value="버튼" onclick="alert('Hello world')" />
+      </div>
+      <div>
+        <button type="submit">전송</button>
+        <button type="reset">초기화</button>
+        <button type="button" onclick="alert('Hello world2')">클릭</button>
+      </div>
+    </form>
+  </body>
+</html>

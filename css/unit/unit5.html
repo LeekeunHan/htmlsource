@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        font-size: 13px;
+      }
+      body {
+        font-size: 12px;
+      }
+      /* .box : class 이름이 box인 요소를 모두 말하는것 */
+      .box {
+        background-color: blue;
+        float: left;
+        color: #fff;
+        text-align: center;
+        margin-right: 20px;
+      }
+      .box_px {
+        width: 160px;
+        height: 1px;
+      }
+      .box_em {
+        width: 10em;
+        height: 10em;
+      }
+      .box_rem {
+        width: 10rem;
+        height: 10rem;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>css 기본문법</h1>
+    <!-- rem : root element 의 크기를 기준으로 설정 
+        box_em : 16px * 10em 
+        box_rem : 16px * 10rem 
+
+     :root : 13 px
+        box_em : 13px * 10em 
+        box_rem : 13px * 10rem 
+
+    :root :13 px , body: 12px
+        box_em : 12px * 10em 
+        box_rem : 13px * 10rem 
+    -->
+    <h2>단위 : em, rem</h2>
+
+    <div class="wrapper clearfix">
+      <div class="box box_px">px</div>
+      <div class="box box_em">em</div>
+      <div class="box box_rem">rem</div>
+    </div>
+  </body>
+</html>
